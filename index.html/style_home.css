@@ -1,0 +1,294 @@
+/* Font, Header and Footer */
+body{
+	font-family: 'McLaren', cursive;
+	background-image: url("paper.jpg");
+}
+
+h1{
+	font-family: 'Source Serif Pro', serif;
+	font-family: 'Amatic SC', cursive;
+	text-transform: uppercase;
+}
+
+.name{
+	text-align: center;
+	font-size: 65px;
+	color: #FFFFFF;
+}
+
+.whatsapp{
+	text-align: center;
+	font-size: 30px;
+	color: #FFFFFF;
+	padding: 15px;
+}
+
+header{
+	background-image: url("n_pizza_calabresa2.jpg");
+	background-position: bottom;
+	padding: 25px;
+}
+
+.box {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	box-shadow: 3px 3px 3px #000000;
+	border-radius: 15px;
+}
+
+#pizza{
+	width: 15%;
+	height: 10%;
+	border-radius: 20px;
+}
+
+#pizza:hover{
+	transform: rotate(60deg);
+}
+
+nav {
+	position: absolute;
+	top: 40px;
+	right: 0;
+}
+
+nav a:hover{
+	color: #FFFFFF;
+}
+
+
+nav li {
+	display: inline;
+	margin: 20px 10px 0 25px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-size: 15px; 
+	font-weight: bold;
+	text-decoration: none;
+}
+
+footer{
+	text-align: center;
+	background: #000000;
+	padding: 15px;
+}
+
+#nb{
+	width: 2%;
+	height: 2%;
+	border-radius: 15px;
+}
+
+.copyright{
+	color: #FFFFFF;
+	font-size: 10px;
+	margin-top: 10px;
+}
+
+/* Main da pagina inicial */
+main{
+	width: 90%;
+	margin: 0 auto;
+}
+
+/* Menu de Sabores  */
+.sabores li:hover{
+	color: #000000;
+}
+
+.sabores li:hover, .pizza_description:hover{
+	font-size: 25px;
+}
+
+.sabores li{
+	display: inline-block;
+	text-align: center;
+	width: 20%;
+	vertical-align: top;
+	margin: 1.5% 6% 3%;
+	padding: 20px 10px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px 20px 20px 50px;
+	background: #FFFFFF;
+}
+
+.sabores h2{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.pizza_description{
+	font-size: 15px;
+}
+
+.pizzas_image{
+	width: 35%;
+	height: 35%;
+}
+
+/* Texto Principal    em = tamanho base da fonte  */
+.titulo_principal, .participe{
+	font-size: 2em;
+	text-align: center;
+	margin: 2em 0 1em;
+	clear: left;
+}
+
+.section_principal p, .section_pousada p{
+	margin: 15px 0 1em;
+	text-align: center;
+}
+
+.section_principal strong, .h2 strong{
+	font-weight: bold;
+}
+
+.section_principal em, .h2 em{
+	font-style: italic;
+	font-weight: 20px;
+}
+
+.delivery_ta{
+	width: 20%;
+	padding: 40px;
+	text-align: center;
+	margin-left: 35%;
+}
+
+/* Scroll image */
+.scroll_pizza{
+	background-image: url(n_pizza_calabresa2.jpg);
+	min-height: 500px;
+	background-attachment: fixed;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*Section Ingredients*/
+.img_ingredientes{
+	margin: 20px;
+	margin-left: 15%;
+	width: 70%;
+}
+
+.p_ingredients{
+	text-align: center;
+	padding: 30px;
+}
+
+/*Dessert*/
+.section_dessert{
+	text-align: center;
+	background: linear-gradient(#fff0b3, #86592d, #fff0b3);
+	width: 60%;
+	padding: 2em 0;
+	margin-left: 20%;
+	border-radius: 30px;
+}
+
+.section_dessert p{
+	padding: 20px;
+}
+
+.section_dessert p strong{
+	letter-spacing: 2px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.brownie_ice_cream{
+	width: 50%;
+	float: right;
+	margin:10px;
+	padding: 10px;
+}
+
+.image_brownie{
+	width: 30%;
+}
+
+/* Pousada  */
+.section_pousada{
+	width: 100%;
+	padding: 2em 0;
+	background: linear-gradient(90deg, #FEFEFE 30%, #AADAFF 70%);
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.pousada_image{
+	width: 60%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* Chef */
+.section_chef{
+	background-image: url("vegetables.jpg");
+	padding: 20px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.chef_image{
+	width: 30%;
+	float: left;
+	margin: 20px;
+}
+
+.chef_description{
+	padding: 20px;
+	width: 80%;
+	text-align: justify;
+}
+
+.participe{
+	font-size: 22px;
+}
+
+/*ME SIGA*/
+.me_siga{
+	width: 20%;
+	margin-left: 40%;
+	padding: 15px;
+	text-align: center;
+}
+
+.social_media{
+	width: 45px;
+	height: 45px;
+	border-radius: 15px;
+	margin: 10px;
+}
+
+
+/*MEDIA*/
+@media screen and (max-width: 480px){
+	.box, .section_principal, .section_pousada, .mapa{
+		width: auto;
+	}
+
+	h1{
+		text-align: center;
+	}
+
+	nav{
+		position: static;
+	}
+
+	header, .pousada_image, .pousada_map, .chef_image{
+		width: 100%;
+	}
+
+	.sabores li{
+		width: auto;
+	}
+}

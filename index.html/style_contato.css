@@ -1,0 +1,232 @@
+/* Font, Header and Footer */
+body{
+	font-family: 'McLaren', cursive;
+	background-image: url("paper.jpg");
+
+}
+
+h1{
+	font-family: 'Source Serif Pro', serif;
+	font-family: 'Amatic SC', cursive;
+	text-transform: uppercase;
+}
+
+header{
+	background-image: url("n_pizza_calabresa2.jpg");
+	background-position: bottom;
+	padding: 25px;
+}
+
+.box {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	box-shadow: 3px 3px 3px #000000;
+	border-radius: 15px;
+}
+
+#pizza{
+	width: 15%;
+	height: 10%;
+	border-radius: 20px;
+}
+
+#pizza:hover{
+	transform: rotate(60deg);
+}
+
+.name{
+	text-align: center;
+	font-size: 65px;
+	color: #FFFFFF;
+}
+
+.whatsapp{
+	text-align: center;
+	font-size: 30px;
+	color: #FFFFFF;
+	padding: 15px;
+}
+
+nav {
+	position: absolute;
+	top: 40px;
+	right: 0;
+}
+
+nav a:hover{
+	color: #FFFFFF;
+}
+
+
+nav li {
+	display: inline;
+	margin: 20px 10px 0 25px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-size: 15px; 
+	font-weight: bold;
+	text-decoration: none;
+}
+
+footer{
+	text-align: center;
+	background: #000000;
+	padding: 15px;
+}
+
+#nb{
+	width: 2%;
+	height: 2%;
+	border-radius: 15px;
+}
+
+.copyright{
+	color: #FFFFFF;
+	font-size: 10px;
+	margin-top: 10px;
+}
+
+/* Main da pagina inicial */
+main{
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+
+/*HORARIO DE FUNCIONAMENTO*/
+h2, .enviar{
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+h2{
+	margin: 40px 0 15px 40%;
+	padding: 25px;
+}
+
+table{
+	margin: 0 auto;
+}
+
+thead{
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+td{
+	border: 1px solid #000000;
+	padding: 10px 25px;
+}
+
+/*MAP*/
+.pousada_map{
+	width: 50%;
+	margin: 0 auto;
+}
+
+/*FORM*/
+form{
+	margin: 0 auto;
+}
+
+form label{
+	display: inline-block;
+	font-size: 15px;
+	padding: 10px;
+	margin: 10px 0px 10px 50px;
+}
+
+.checkbox, .enviar, select, .p_form, legend{
+	margin: 15px 0 5px 40%;
+	padding: 5px;
+}
+
+.input_padrao{
+	display: block;
+	margin: 0 auto;
+	padding: 20px 20px;
+	width: 50%;
+}
+
+.radio_button{
+	margin-left: 150px;
+}
+
+.enviar{
+	width: 20%;
+	padding: 10px 0 10px;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s background;
+	cursor: pointer
+
+}
+
+.enviar:hover{
+	background: darkorange;
+	transform: scale(1.2);
+}
+
+
+/*MENU*/
+.section_menu{
+	padding: 50px;
+}
+
+.image_menu{
+	width: 35%;
+	float: left;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.flavours{
+	line-height: 3;
+}
+
+.flavours:before{
+	content: "❂ ";
+}
+
+/*MEDIA*/
+@media screen and (max-width: 480px){
+	.box, .pousada_map{
+		width: auto;
+	}
+
+	h1{
+		text-align: center;
+	}
+
+	nav{
+		position: static;
+	}
+
+	label, input, legend,h1, h2{
+		width: 90%;
+		padding: 10px;
+	}
+	
+	header, footer, .image_menu,  
+	.input_padrao, .enviar, .radio_buton, .flavours,
+	.p_form, .checkbox, .section_working_times, .section_where, .section_form, .section_menu{
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.checkbox, .enviar{
+		margin: 25px;
+	}
+}
