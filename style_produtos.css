@@ -1,0 +1,174 @@
+/* Font, Header and Footer */
+body{
+	font-family: 'McLaren', cursive;
+	background-image: url("paper.jpg");
+
+}
+
+h1{
+	font-family: 'Amatic SC', cursive;
+	text-transform: uppercase;
+}
+
+header{
+	background-image: url("n_pizza_calabresa2.jpg");
+	background-position: bottom;
+	padding: 25px;
+}
+
+.box {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	box-shadow: 3px 3px 3px #000000;
+	border-radius: 15px;
+}
+
+#pizza{
+	width: 15%;
+	height: 10%;
+	border-radius: 20px;
+}
+
+#pizza:hover{
+	transform: rotate(60deg);
+}
+
+.name{
+	text-align: center;
+	font-size: 65px;
+	color: #FFFFFF;
+}
+
+.whatsapp{
+	text-align: center;
+	font-size: 30px;
+	color: #FFFFFF;
+	padding: 15px;
+}
+
+nav {
+	position: absolute;
+	top: 40px;
+	right: 0;
+}
+
+nav a:hover{
+	color: #FFFFFF;
+}
+
+
+nav li {
+	display: inline;
+	margin: 20px 10px 0 25px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-size: 15px; 
+	font-weight: bold;
+	text-decoration: none;
+}
+
+footer{
+	text-align: center;
+	background: #000000;
+	padding: 15px;
+}
+
+#nb{
+	width: 2%;
+	height: 2%;
+	border-radius: 15px;
+}
+
+.copyright{
+	color: #FFFFFF;
+	font-size: 10px;
+	margin-top: 10px;
+}
+
+/* Main da pagina inicial */
+main{
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+/*MAIN*/
+
+.image_pizza{
+	width: 80%;
+	height: 80%;
+	margin: 5px;
+}
+
+.pizzas_image{
+	width: 35%;
+	height: 35%;
+	margin: 5px;
+}
+
+.titulo_principal{
+	font-size: 2em;
+	text-align: center;
+	margin: 2em 0 1em;
+	clear: left;
+}
+
+.sabores li:hover{
+	transform: scale(1.3, 1.3);
+}
+
+.sabores li{
+	display: inline-block;
+	text-align: center;
+	width: 20%;
+	vertical-align: top;
+	margin: 1.5% 6% 3%;
+	padding: 5px 5px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px 20px 20px 50px;
+	background: #FEFEFE;
+}
+
+.sabores h2{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.pizza_description{
+	font-size: 10px;
+	height: 40px;
+	width: 100%;
+}
+
+.pizza_preco{
+	font-size: 15px;
+	font-weight: bold;
+}
+
+/*MEDIA*/
+@media screen and (max-width: 480px){
+	.box{
+		width: auto;
+	}
+
+	h1{
+		text-align: center;
+	}
+
+	nav{
+		position: static;
+	}
+
+	header{
+		width: 100%;
+	}
+
+	.sabores li{
+		width: auto;
+	}
+}
